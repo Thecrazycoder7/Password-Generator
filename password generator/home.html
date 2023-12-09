@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="body-container">
+        <!--  HEADER SECTION   -->
+        <div class="nav">
+            <div class="logo">Password Generated</div>
+            <div class="nav-content">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--  HEADER SECTION   -->
+        
+        <!--  Password Generator Code   -->
+        <div class="homepage">
+                <div class="container">
+                    <div class="textbox">
+                        <input type="text" id="passBox" disabled>
+                        <span class="material-symbols-outlined" id="copyPass">content_copy</span>
+                    </div>
+        
+                    <div class="pass-length">
+                        <h3>Password Length</h3>
+                        <div class="pass-indicator">
+                            <input type="range"  class="inputSlider" id="inputSlider" min="1" max="20" value="8">
+                            <span id="sliderValue"></span>
+                        </div>
+                    </div>
+        
+                    <h3>Password Settings</h3>
+                    <div class="options-check">
+                        <input type="checkbox" class="checkBox" id="lowercaseEle" name="LOWERCASE" value="LOWERCASE" checked disabled>
+                        <label for="LOWERCASE">LOWERCASE</label><br>
+                        
+                        <input type="checkbox" class="checkBox" id="uppercaseEle" name="UPPERCASE" value="UPPERCASE">
+                        <label for="UPPERCASE">UPPERCASE</label><br>
+                        
+                        <input type="checkbox" class="checkBox" id="numberEle" name="NUMBERS" value="NUMBERS">
+                        <label for="NUMBERS">NUMBERS</label><br>
+                        
+                        <input type="checkbox" class="checkBox"id="symbolsEle" name="SYMBOLS" value="SYMBOLS">
+                        <label for="SYMBOLS">SYMBOLS</label><br>
+                        
+                    </div>
+                    
+                    <div class="btnBox">
+                        <button class="btn" id="btn">
+                            Generate
+                            <span class="material-symbols-outlined">
+                            passkey
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  Password Generator Code   -->
+    </div>  
+
+    <script src="home.js"></script>
+</body>
+</html>
